@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Devcrud">
+    <title>Diamond APP</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #e0e7ff; /* Yeni arka plan rengi */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header-img {
+            width: 160px; /* Başlık yanındaki resim boyutu */
+            display: block;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .header-img:hover {
+            transform: scale(1.2);
+        }
+        .header-text {
+            text-align: center;
+            font-size: 48px;
+        }
+        .image-section {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.5);
+        }
+    </style>    
+</head>
+<body>
+    <!-- COMPONENT URL -->
+    <a href="companent.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <div class="container">
+        <img src="assets/imgs/diamondimgs/d.png" alt="Atölye Resmi" class="header-img">
+        <div>
+            <h1>Diamond Uygulaması</h1>
+            <p>
+                Diamond uygulaması temelinde pırlanta gibi değerli taşların hesaplama programı olarak çalışır. Çalışma prensibi bir ürünün üzerinde kullanılan bütün değişkenlerin hesaplanması ve kullanıcıya göstermesi üzerinedir.Hedef noktası olarak Pırlanta Dükkanları,Pırlantacılar ,Atölyeler ve Tedarikçiler olarak belirlenmiştir.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim1.png">
+            <p>Diamond Uygulaması</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim2.png">
+            <p>Miktar değerini giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim3.png">
+            <p>Ayar değerini giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim4.png">
+            <p>Fire değerini giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim5.png">
+            <p>İşçilik değerini giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim6.png">
+            <p>Ürünün türünü belirliyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim7.png">
+            <p>Ürünün özelliğine göre ek malzeme miktar değeri giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim8.png">
+            <p>Ek malzeme ayar giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim9.png">
+            <p>Ek malzeme fire değeri giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim10.png">
+            <p>Ek malzeme işçilik değeri giriyoruz</p>
+        </div>
+        <div class="image-section">
+            <img src="assets/imgs/diamondimgs/resim24.png">
+            <p>İşlemin son hali</p>
+        </div>
+    </div>
+    <div class="note">
+        <strong>Not:</strong> Kullanıcı burada müşterisine satacağı ya da alacağı ürünün değerini belirlemiş oluyor. Sağ tarafta ürünün "Sade GR" ve "Eklenti GR" değerlerini, has bilgisiyle beraber dolar karşılıklarını görebiliriz. Ürüne yapılan "Cila" ve "Mıhlama" işlemlerinin birim ve adet fiyatları görülebilir. Ayrıca, taşın türüne bağlı olarak birim maliyet hesaplanır. İşletme maliyetine uygun şekilde diğer masraflar, sabit masraflar ve işletme karı da tablolar aracılığıyla görüntülenebilir. Tablo altlarında işlemlerin detaylarını grafiklerle inceleyebilir ve hesaplamaların toplam maliyetini görebiliriz.
+    </div>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+</body>
+</html>
