@@ -24,6 +24,15 @@
             margin: 0 auto;
             padding: 20px;
         }
+		.container-title {
+			display: flex; /* Yan yana hizalama */
+			align-items: center; /* Dikey hizalama */
+			justify-content: center; /* Ortalamak için */
+			gap: 20px; /* Boşluk bırak */
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px;
+		}
         .header-img {
             width: 160px; /* Başlık yanındaki resim boyutu */
             display: block;
@@ -37,6 +46,10 @@
             text-align: center;
             font-size: 48px;
         }
+		.header-title {
+			text-align: left; /* Metni sola hizala */
+			font-size: 24px;
+		}
         .image-section {
             background: white;
             padding: 15px;
@@ -62,15 +75,18 @@
 <body>
     <!-- COMPONENT URL -->
     <a href="companent.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
-    <div class="container">
-        <img src="assets/imgs/diamondimgs/d.png" alt="Atölye Resmi" class="header-img">
-        <div>
-            <h1>Diamond Uygulaması</h1>
-            <p>
-                Diamond uygulaması temelinde pırlanta gibi değerli taşların hesaplama programı olarak çalışır. Çalışma prensibi bir ürünün üzerinde kullanılan bütün değişkenlerin hesaplanması ve kullanıcıya göstermesi üzerinedir.Hedef noktası olarak Pırlanta Dükkanları,Pırlantacılar ,Atölyeler ve Tedarikçiler olarak belirlenmiştir.
-            </p>
-        </div>
-    </div>
+    <div class="container-title">
+		<img src="assets/imgs/diamondimgs/d.png" alt="Atölye Resmi" class="header-img">
+		<div class="header-title">
+			<h1>Diamond Uygulaması</h1>
+			<p>
+				Diamond uygulaması temelinde pırlanta gibi değerli taşların hesaplama programı olarak çalışır.
+				Çalışma prensibi bir ürünün üzerinde kullanılan bütün değişkenlerin hesaplanması ve kullanıcıya 
+				gösterilmesi üzerinedir. Hedef noktası olarak Pırlanta Dükkanları, Pırlantacılar, Atölyeler 
+				ve Tedarikçiler olarak belirlenmiştir.
+			</p>
+		</div>
+	</div>
     <div class="container">
         <div class="image-section">
             <img src="assets/imgs/diamondimgs/resim1.png">
