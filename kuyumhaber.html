@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuyum Haber</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e0e7ff;
+      text-align: center;
+    }
+
+    .container-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-img {
+      width: 120px;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .header-img:hover {
+      transform: scale(1.1);
+    }
+
+    .header-title {
+      text-align: left;
+      font-size: 18px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .image-box-group {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-box-group img {
+      width: 80%;
+      height: auto;
+      max-height: 600px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-box-group img:hover {
+      transform: scale(1.01);
+    }
+
+    .image-section {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-section:hover {
+      transform: scale(1.01);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-section img {
+      width: 80%;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+
+    .image-section h2 {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .container-title {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-title {
+        text-align: center;
+      }
+
+      .image-box-group img,
+      .image-section img {
+        width: 95%;
+        max-height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container-title">
+        <img src="assets/imgs/kuyumhaberimgs/logo.png" alt="Logo" class="header-img">
+        <div class="header-title">
+            <h1>Kuyum Haber</h1>
+            <p>Youtube Kuyum Haber kanalının haberlerini mobil taraftaki gibi Zerduz makinesinde kullanıcılarına özel tasarlanmıştır. Güncel piyasa haberlerini aktaran bir uygulamadır.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- 3 Görselin Aynı Kutuda Olduğu Alan -->
+        <div class="image-box-group">
+            <img src="assets/imgs/kuyumhaberimgs/resim1.png" alt="Resim 1">
+            <img src="assets/imgs/kuyumhaberimgs/resim2.png" alt="Resim 2">
+            <img src="assets/imgs/kuyumhaberimgs/resim3.png" alt="Resim 3">
+            <h2>Uygulamanın ana girişi</h2>
+        </div>
+
+        <!-- Diğer Görseller -->
+        <div class="image-section">
+            <img src="assets/imgs/kuyumhaberimgs/resim4.png" alt="Arama">
+            <h2>Arama yapma alanı</h2>
+        </div>
+
+        <div class="image-section">
+            <img src="assets/imgs/kuyumhaberimgs/resim5.png" alt="Popup Detay">
+            <h2>Haber detay sayfası Popup</h2>
+        </div>
+
+        <div class="image-section">
+            <img src="assets/imgs/kuyumhaberimgs/resim6.png" alt="Detay Sayfası">
+            <h2>Haber detay sayfası</h2>
+        </div>
+    </div>
+
+</body>
+</html>

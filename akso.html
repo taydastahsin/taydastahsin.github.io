@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AKSO Uygulaması Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      text-align: center;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: white;
+      padding: 20px;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header img {
+      width: 100px;
+      border-radius: 5px;
+    }
+    .header-content {
+      text-align: left;
+    }
+    .header-content h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .header-content p {
+      margin-top: 8px;
+      font-size: 16px;
+      max-width: 600px;
+    }
+
+    .section {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .image-box {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+    }
+
+    .image-box img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 5px;
+    }
+
+    .image-box h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="assets/imgs/aksoimgs/logo.png" alt="Logo">
+    <div class="header-content">
+      <h1>AKSO</h1>
+      <p>Ankara Kuyumcular ve Saatçiler Odası için piyasa fiyatlarını gösteren bir uygulama tasarlanmıştır.  
+      Uygulamada kullanıcının anlık veriye ulaşım sağlaması hedeflenmiştir.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="row">
+      <div class="image-box">
+        <img src="assets/imgs/aksoimgs/resim1.png" alt="Resim 1">
+      </div>
+      <div class="image-box">
+        <img src="assets/imgs/aksoimgs/resim2.png" alt="Resim 2">
+      </div>
+    </div>
+    <h2>Uygulamanın Ana Girişi</h2>
+  </div>
+
+  <div class="section">
+    <div class="image-box">
+      <img src="assets/imgs/aksoimgs/resim3.png" alt="Resim 3">
+      <h2>Uygulama Widgetları</h2>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="image-box">
+      <img src="assets/imgs/aksoimgs/resim4.png" alt="Resim 4">
+      <h2>Widget Gösterimi</h2>
+    </div>
+  </div>
+
+</body>
+</html>
