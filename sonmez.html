@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sönmez Uygulaması</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: white;
+      padding: 20px;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      width: 80px;
+      border-radius: 5px;
+    }
+
+    .header-content {
+      text-align: left;
+      max-width: 600px;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .header-content p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .section {
+      margin: 30px auto;
+      max-width: 900px;
+    }
+
+    .image-box {
+      background: white;
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      max-width: 90%;
+    }
+
+    .image-box:hover {
+      transform: scale(1.02);
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 5px;
+    }
+
+    .image-box h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Bilgi -->
+  <div class="header">
+    <img src="assets/imgs/sonmezimgs/logo.png" alt="Logo">
+    <div class="header-content">
+      <h1>Sönmez</h1>
+      <p>
+        Kuyumcuların altın piyasasına uygun, kullanıcıların aktif şekilde anlık fiyat değişimini kontrol ettiği bir uygulamadır. 
+        Uygulamamız kullanıcıyı bilgilendirmek amacıyla tasarlanmıştır.
+      </p>
+    </div>
+  </div>
+
+  <!-- İçerik Bölümü -->
+  <div class="section">
+    <div class="image-box">
+      <img src="assets/imgs/sonmezimgs/resim1.png" alt="Ana Giriş">
+      <h2>Ana Giriş</h2>
+    </div>
+
+    <div class="image-box">
+      <img src="assets/imgs/sonmezimgs/resim2.png" alt="Finansal Kategoriler">
+      <h2>Finansal Kategoriler</h2>
+    </div>
+
+    <div class="image-box">
+      <img src="assets/imgs/sonmezimgs/resim3.png" alt="Gram Altın Fiyat Kategorisi">
+      <h2>Gram Altın Fiyat Kategorisi</h2>
+    </div>
+
+    <div class="image-box">
+      <img src="assets/imgs/sonmezimgs/resim4.png" alt="Sarrafiye Fiyat Kategorisi">
+      <h2>Sarrafiye Fiyat Kategorisi</h2>
+    </div>
+  </div>
+
+</body>
+</html>
